@@ -88,7 +88,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-[60px] bg-white shadow-md w-full fixed z-40">
+        <div className="md:hidden mt-[0px] bg-white shadow-md w-full fixed z-40">
           <ul className="flex flex-col items-center py-4 space-y-3 font-bold">
             {navLinks.map((item, index) => (
               <li key={index}>
