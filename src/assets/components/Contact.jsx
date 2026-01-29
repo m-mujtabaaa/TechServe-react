@@ -4,9 +4,9 @@ function Contact() {
   return (
     <>
       {/* Header */}
-      <div className="bg-[#08182C6E] bg-cover h-[160px] md:h-[220px] mt-[60px] relative">
-        <img src="computerlab.jpg" alt="" className="absolute -z-2 h-[160px] md:h-[220px] w-full object-cover" />
-        <div className="px-[30px] md:px-[50px] py-[35px] md:py-[50px]">
+      <div className='bg-[#08182C6E] bg-cover h-[160px] md:h-[220px]  mt-[60px] -z-1'>
+        <img src="computerlab.jpg" alt="" className='absolute -z-2 h-[160px] md:h-[220px] w-full' />
+        <div className='px-[30px] md:px-[50px] py-[35px] md:py-[50px]'>
           <h2 className="text-white font-bold text-[35px] md:text-[50px]">CONTACT US</h2>
           <h4 className="text-[19px] text-gray-400 font-bold">
             <span className="text-white">Contact Us</span> / <a href="/" className="hover:text-white duration-300">Home</a>
@@ -99,7 +99,7 @@ function Contact() {
       {/* Google Map */}
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3618.4829626168303!2d67.029322!3d24.915612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fa2235b5867%3A0xbc45d3b350c0d8f9!2sTechServe%20Computing%20Institute!5e0!3m2!1sen!2sus!4v1769589663816!5m2!1sen!2sus"
-        className="w-full h-[80vh] border-0"
+        className="w-screen md:w-full h-[80vh] border-0"
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
