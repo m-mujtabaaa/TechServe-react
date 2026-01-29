@@ -34,7 +34,7 @@ function App() {
     }
     ,
     {
-      path: "/Registeration",
+      path: "/registeration",
       element: <>
         <Curser />
         <Navbar />
@@ -44,7 +44,7 @@ function App() {
     }
     ,
     {
-      path: "/PrivacyPolicy",
+      path: "/privacyPolicy",
       element: <>
         <Curser />
         <Navbar />
@@ -54,7 +54,7 @@ function App() {
     }
     ,
     {
-      path: "/Contact",
+      path: "/contact",
       element: <>
         <Curser />
         <Navbar />

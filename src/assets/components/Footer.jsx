@@ -63,10 +63,10 @@ export default function SpaceSection() {
             </h3>
             <hr className="h-1 w-28 bg-[#075197] mb-5 mx-auto lg:mx-0" />
             <ul className="text-white font-bold text-[15px] leading-8 list-none md:list-disc px-5 inline-block text-left">
-              <li className="md:text-start text-center"><a href="/Registeration" className="hover:text-[#075197] duration-300">Make an Account</a></li>
-              <li className="md:text-start text-center"><a href="#" className="hover:text-[#075197] duration-300">Student Profile</a></li>
-              <li className="md:text-start text-center"><a href="/PrivacyPolicy" className="hover:text-[#075197] duration-300">Privacy Policy</a></li>
-              <li className="md:text-start text-center"><a href="/Contact" className="hover:text-[#075197] duration-300">Contact Us</a></li>
+              <li className="md:text-start text-center"><a href="/registeration" className="hover:text-[#075197] duration-300">Make an Account</a></li>
+              <li className="md:text-start text-center"><a href="/registeration" className="hover:text-[#075197] duration-300">Student Profile</a></li>
+              <li className="md:text-start text-center"><a href="/privacyPolicy" className="hover:text-[#075197] duration-300">Privacy Policy</a></li>
+              <li className="md:text-start text-center"><a href="/contact" className="hover:text-[#075197] duration-300">Contact Us</a></li>
 
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function SpaceSection() {
             <ul className="text-white font-bold text-[15px] leading-8 list-none md:list-disc px-5 inline-block text-left ">
               <li className="md:text-start text-center"><a href="/" className="hover:text-[#075197] duration-300">Home</a></li>
               <li className="md:text-start text-center"><a href="#Courses" className="hover:text-[#075197] duration-300">Courses</a></li>
-              <li className="md:text-start text-center"><a href="/PrivacyPolicy" className="hover:text-[#075197] duration-300">Terms and Conditions</a></li>
+              <li className="md:text-start text-center"><a href="/privacyPolicy" className="hover:text-[#075197] duration-300">Terms and Conditions</a></li>
             </ul>
           </div>
 

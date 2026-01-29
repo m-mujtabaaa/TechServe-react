@@ -4,8 +4,8 @@ const navLinks = [
   { name: "Home", link: "/" },
   { name: "About Us", link: "#About" },
   { name: "Courses", link: "#Courses" },
-  { name: "Privacy Policy", link: "/Privacypolicy" },
-  { name: "Contact", link: "/Contact" },
+  { name: "Privacy Policy", link: "/privacypolicy" },
+  { name: "Contact", link: "/contact" },
 ];
 
 function Navbar() {
