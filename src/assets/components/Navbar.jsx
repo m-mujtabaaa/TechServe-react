@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const navLinks = [
   { name: "Home", link: "/" },
@@ -11,6 +12,10 @@ const navLinks = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/registeration"); }
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-white h-[60px] flex items-center justify-between shadow-md">
@@ -38,7 +43,7 @@ function Navbar() {
           ))}
 
           <li>
-            <button className="h-[40px] w-[85px] text-white font-semibold text-[15px] bg-[#075197] duration-300 hover:bg-[#200459] rounded-[5px] mx-10">
+            <button onClick={handleClick} className="h-[40px] w-[85px] text-white font-semibold text-[15px] bg-[#075197] duration-300 hover:bg-[#200459] rounded-[5px] mx-10">
               Login
             </button>
           </li>
@@ -101,7 +106,7 @@ function Navbar() {
               </li>
             ))}
             <li>
-              <button className="h-[40px] w-[85px] text-white font-semibold text-[15px] bg-[#075197] duration-300 hover:bg-[#200459] rounded-[5px]">
+              <button onClick={handleClick} className="h-[40px] w-[85px] text-white font-semibold text-[15px] bg-[#075197] duration-300 hover:bg-[#200459] rounded-[5px]">
                 Login
               </button>
             </li>

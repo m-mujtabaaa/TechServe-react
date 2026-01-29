@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 function Learning() {
+
+   const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate("/registeration"); }
   return (
     <div className="flex flex-col md:flex-row bg-gray-200 shadow-lg  my-5 md:h-[80vh] h-auto">
       
@@ -15,7 +22,7 @@ function Learning() {
         <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-6 md:leading-7 w-full md:w-[90%] mb-6">
           Can bring you a super exciting experience of learning through online! You never face any negative experience while enjoying your classes virtually by sitting in your comfort zone. Our flexible learning initiatives will help you to learn better and quicker than the traditional ways of learning skills.
         </p>
-        <button className="h-[50px] w-[200px] md:w-[230px] text-white font-semibold text-[15px] md:text-[17px]-base bg-[#075197] rounded-md hover:bg-[#200459] duration-300">
+        <button onClick={handleClick} className="h-[50px] w-[200px] md:w-[230px] text-white font-semibold text-[15px] md:text-[17px]-base bg-[#075197] rounded-md hover:bg-[#200459] duration-300">
           Start for Free
         </button>
       </div>
