@@ -18,7 +18,7 @@ function Registeration() {
       </div>
 
       {/* Auth Container */}
-      <div className="h-[120vh] flex items-center justify-center px-4">
+      <div className="flex items-center justify-center px-4 py-30">
         <div className="relative w-full max-w-[1100px] md:h-[450px] bg-white rounded-lg shadow-xl overflow-hidden">
 
           {/* Forms */}
