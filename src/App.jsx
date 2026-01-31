@@ -14,6 +14,7 @@ import Registeration from './assets/components/Registeration'
 import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import Privacypolicy from './assets/components/Privacypolicy'
 import Contact from './assets/components/Contact'
+import Profile from './assets/components/Profile'
 
 function App() {
   const router = createBrowserRouter([
@@ -59,6 +60,16 @@ function App() {
         <Curser />
         <Navbar />
         <Contact/>
+        <Footer />
+      </>
+    }
+    ,
+    {
+      path: "/profile",
+      element: <>
+        <Curser />
+        <Navbar />
+        <Profile/>
         <Footer />
       </>
     }
