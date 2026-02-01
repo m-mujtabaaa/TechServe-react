@@ -73,6 +73,7 @@ function App() {
         <Footer />
       </>
     }
+    
   ])
   return (
 
