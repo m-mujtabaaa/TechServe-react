@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { User, BookOpen, CreditCard, CheckSquare, ChevronDown } from "lucide-react";
+import { User, BookOpen, CreditCard, CheckSquare, ChevronDown, Menu, X  } from "lucide-react";
 
 function Profile() {
   const [active, setActive] = useState("profile");
@@ -36,27 +36,63 @@ function Profile() {
       </div>
 
       <div className="flex">
-        {/* Sidebar */}
-        <aside className="w-[20%] bg-[#075197] text-white p-6">
-          <h2 className="text-3xl font-semibold mb-6">Dashboard</h2>
 
-          <nav className="space-y-3">
-            {menu.map((item) => (
-              <button
-                key={item.key}
-                onClick={() => setActive(item.key)}
-                className={`flex items-center gap-3 w-full px-4 py-2 rounded-lg transition
-                  ${active === item.key
-                    ? "bg-[#13345B]"
-                    : "hover:bg-[#13345B]"
-                  }`}
-              >
-                {item.icon}
-                {item.name}
-              </button>
-            ))}
-          </nav>
-        </aside>
+
+        {/* Hamburger Icon for Mobile */}
+      <div className="md:hidden fixed top-4 left-4 z-50">
+        <button
+          onClick={() => setOpen(true)}
+          className="p-2 bg-[#075197] text-white rounded-md shadow-md"
+        >
+          <Menu size={24} />
+        </button>
+      </div>
+
+      {/* Overlay */}
+      {open && (
+        <div
+          className="fixed inset-0 bg-opacity-50 z-40"
+          onClick={() => setOpen(false)}
+        ></div>
+      )}
+
+        {/* Sidebar */}
+      <aside className={`bg-[#075197] text-white p-6 
+        fixed top-0 left-0 h-full z-50
+        w-64 transform transition-transform duration-300
+        ${open ? "translate-x-0" : "-translate-x-full"} 
+        md:translate-x-0 md:static md:w-[20%]`}
+      >
+        {/* Close button on mobile */}
+        <div className="flex justify-between items-center mb-6 md:hidden">
+          <h2 className="text-3xl font-semibold">Dashboard</h2>
+          <button onClick={() => setOpen(false)}>
+            <X size={24} />
+          </button>
+        </div>
+
+        {/* Desktop Title */}
+        <h2 className="hidden md:block text-3xl font-semibold mb-6">Dashboard</h2>
+
+        {/* Menu */}
+        <nav className="space-y-3">
+          {menu.map((item) => (
+            <button
+              key={item.key}
+              onClick={() => {
+                setActive(item.key);
+                setOpen(false); // Close on mobile after click
+              }}
+              className={`flex items-center gap-3 w-full px-4 py-2 rounded-lg transition
+                ${active === item.key ? "bg-[#13345B]" : "hover:bg-[#13345B]"}`
+              }
+            >
+              {item.icon}
+              <span>{item.name}</span>
+            </button>
+          ))}
+        </nav>
+      </aside>
 
         {/* Content Area */}
         <div className="bg-gray-200 w-full py-12 px-[2vw] w-full">
