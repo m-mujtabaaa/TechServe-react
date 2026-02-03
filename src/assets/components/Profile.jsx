@@ -41,10 +41,10 @@ function Profile() {
 
 
         {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden fixed z-50">
+        <div className="md:hidden fixed h-screen top-0 right-0 z-50">
           <button
             onClick={() => setOpen(true)}
-            className="p-2 bg-[#075197] text-white rounded-md shadow-md"
+            className="p-4 px-5 bg-white text-black rounded-md shadow-md"
           >
             <Menu size={24} />
           </button>
@@ -53,14 +53,14 @@ function Profile() {
         {/* Overlay */}
         {open && (
           <div
-            className="fixed inset-0 bg-opacity-50 z-40"
+            className="fixed h-full inset-0 bg-opacity-50 z-40"
             onClick={() => setOpen(false)}
           ></div>
         )}
 
         {/* Sidebar */}
         <aside className={`bg-[#075197] text-white p-6  
-        fixed h-full z-50
+        fixed top-0 left-0 h-full z-50 
         w-64 transform transition-transform duration-300
         ${open ? "translate-x-0" : "-translate-x-full"} 
         md:translate-x-0 md:static md:w-[20%]`}
@@ -77,7 +77,7 @@ function Profile() {
           <h2 className="hidden md:block text-3xl font-semibold mb-6">Dashboard</h2>
 
           {/* Menu */}
-          <nav className="space-y-3">
+          <nav className="h-full space-y-3">
             {menu.map((item) => (
               <button
                 key={item.key}
