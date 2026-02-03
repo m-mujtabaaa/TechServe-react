@@ -106,14 +106,14 @@ function Profile() {
                 <div className='p-3 rounded flex items-center h-[15vh] my-8'>
                   <img src="Guest.png" alt="" className='rounded-[50%] h-[70px]' />
                   <div className='mx-5'>
-                    <h3 className='text-[#13345B] text-2xl font-bold inline'>Muhammad Mujtaba</h3>
-                    <h4 className='inline float-left md:float-right'>GR No. 121507</h4>
-                    <hr className='w-[65vw] my-1' />
-                    <p>Student</p>
+                    <h3 className='text-[#13345B] text-xl md:text-2xl font-bold inline'>Muhammad <br className="block md:hidden"/>Mujtaba</h3>
+                    <h4 className='inline float-right text-sm md:text-md'>GR No. 121507</h4>
+                    <hr className='w-[55vw] md:w-[65vw] my-1' />
+                    <p className="text-sm md:text-md'">Student</p>
                   </div>
                 </div>
 
-                <div className='border-1 border-gray-400 h-[45vh] p-3 rounded'>
+                <div className='border-1 border-gray-400 p-3 rounded'>
                   <h3 className='text-[#13345B] text-3xl font-bold inline'>Diploma In Information Technology</h3>
                   <p className='text-xs inline float-right border-2 border-blue-300 rounded px-2 px-1 bg-blue-100'>ENROLLED</p>
                   <div className='my-5'><span className='leading-9 text-lg'>Time : </span> <br /><span className='bg-gray-200 mr-2 px-2 px-1 border-1 border-gray-500 rounded'>Monday - Friday </span><br className="block md:hidden"/><br className="block md:hidden"/><span className='bg-gray-200 px-2 border-1 border-gray-500 rounded'>8:00pm - 9:00pm</span></div>
@@ -177,7 +177,7 @@ function Profile() {
             {/* COURSE (EMPTY) */}
             {active === "course" && (
               <div>
-                <div className='border-1 border-gray-400 h-[45vh] p-3 rounded'>
+                <div className='border-1 border-gray-400 p-3 rounded'>
                   <h3 className='text-[#13345B] text-3xl font-bold inline'>Diploma In Information Technology</h3>
                   <p className='text-xs inline float-right border-2 border-blue-300 rounded px-2 px-1 bg-blue-100'>ENROLLED</p>
                   <div className='my-5'><span className='leading-9 text-lg'>Time : </span> <br /><span className='bg-gray-200 mr-2 px-2 px-1 border-1 border-gray-500 rounded'>Monday - Friday </span><br className="block md:hidden"/><br className="block md:hidden"/><span className='bg-gray-200 px-2 border-1 border-gray-500 rounded'>8:00pm - 9:00pm</span></div>
