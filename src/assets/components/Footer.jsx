@@ -103,7 +103,7 @@ export default function SpaceSection() {
         <div className="text-center px-2">
           <p className="text-white text-sm py-10 md:py-0 lg:text-base">
             ©2023 TechServe is Proudly Crafted by
-            <span className="text-[#075197] font-bold"><a href=""> Muhammad Mujtaba </a></span> {/* and
+            <span className="text-[#075197] font-bold"><a href="https://www.linkedin.com/in/muhammad-mujtababa-47b763327"> Muhammad Mujtaba </a></span> {/* and
       <span className="text-[#075197] font-bold"> Syed Muhammad Osama </span> */}.
           </p>
         </div>

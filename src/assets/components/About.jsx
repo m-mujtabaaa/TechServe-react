@@ -10,7 +10,7 @@ const about = [
 function Certification() {
   return (
     <>
-      <div className='flex flex-col md:flex-row h-[105vh] my-5 md:h-[95vh] bg-gray-200 shadow-lg' id='About'>
+      <div className='flex flex-col md:flex-row h-auto my-5 md:h-[95vh] bg-gray-200 shadow-lg' id='About'>
         <div className=' flex flex-col px-5 md:px-17 justify-center py-10'>
           <h5 className='text-[#075197] font-bold text-sm md:text-base mb-2'>ABOUT US</h5>
           <h3 className='text-[#13345B] font-bold text-2xl sm:text-3xl md:text-4xl leading-8 md:leading-10 w-full md:w-[90%] mb-4' >Develop Your Skills, Learn Something New, and Grow Your Skills From Anywhere in the World!</h3>
