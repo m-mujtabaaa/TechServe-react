@@ -18,17 +18,17 @@ function Navbar() {
     navigate("/registeration"); }
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white h-[60px] flex items-center justify-between shadow-md">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white h-[60px] flex items-center justify-between shadow-lg">
         
         {/* Logo */}
         <img
-          className="h-[55px] w-[67px] mx-0 md:mx-10"
+          className="h-[55px] w-[67px] mx-0 lg:mx-10"
           src="/TechLogo-removebg-preview.png"
           alt="Logo"
         />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center font-bold">
+        <ul className="hidden lg:flex items-center font-bold">
           {navLinks.map((item, index) => (
             <li key={index} className="px-5">
               <a
@@ -50,7 +50,7 @@ function Navbar() {
         </ul>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden mx-5">
+        <div className="lg:hidden mx-5">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none text-gray-700"
@@ -93,7 +93,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-[0px] bg-white shadow-md w-full fixed z-40">
+        <div className="lg:hidden mt-[0px] bg-white shadow-lg w-full fixed z-40">
           <ul className="flex flex-col items-center py-4 space-y-3 font-bold">
             {navLinks.map((item, index) => (
               <li key={index}>

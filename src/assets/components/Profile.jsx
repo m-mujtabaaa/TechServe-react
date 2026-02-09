@@ -41,7 +41,7 @@ function Profile() {
 
 
         {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden fixed h-screen top-0 right-0 z-50">
+        <div className="lg:hidden fixed h-screen top-0 right-0 z-50">
           <button
             onClick={() => setOpen(true)}
             className="p-4 px-5 bg-white text-black rounded-md shadow-md"
@@ -60,13 +60,13 @@ function Profile() {
 
         {/* Sidebar */}
         <aside className={`bg-[#075197] text-white p-6  
-        fixed top-0 left-0 h-full md:h-auto z-50 
-        w-64 transform transition-transform duration-300
+        fixed top-0 left-0 h-full lg:h-auto z-50 
+        transform transition-transform duration-300
         ${open ? "translate-x-0" : "-translate-x-full"} 
-        md:translate-x-0 md:static md:w-[20%]`}
+        lg:translate-x-0 lg:static lg:w-[20%]`}
         >
           {/* Close button on mobile */}
-          <div className="flex justify-between items-center mb-6 md:hidden">
+          <div className="flex justify-between items-center mb-6 lg:hidden">
             <h2 className="text-3xl font-semibold">Dashboard</h2>
             <button onClick={() => setOpen(false)}>
               <X size={24} />
@@ -74,7 +74,7 @@ function Profile() {
           </div>
 
           {/* Desktop Title */}
-          <h2 className="hidden md:block text-3xl font-semibold mb-6">Dashboard</h2>
+          <h2 className="hidden lg:block text-3xl font-semibold mb-6">Dashboard</h2>
 
           {/* Menu */}
           <nav className="h-full space-y-3">
@@ -97,7 +97,7 @@ function Profile() {
         </aside>
 
         {/* Content Area */}
-        <div className="bg-gray-200 w-full py-12 px-[2vw] w-full">
+        <div className="bg-gray-200 w-full py-12 px-[2vw] overflow-hidden">
           <div className="bg-white min-h-screen px-5 py-4 rounded">
 
             {/* PROFILE CONTENT */}
