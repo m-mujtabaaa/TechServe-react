@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
+
 
 const about = [
   "Expert Trainers",
@@ -7,7 +9,13 @@ const about = [
   "Self Development"
 ]
 
-function Certification() {
+function About() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/courses"); }
+
   return (
     <>
       <div className='flex flex-col md:flex-row h-auto my-5 md:h-[95vh] bg-gray-200 shadow-lg' id='About'>
@@ -20,7 +28,7 @@ function Certification() {
               <li key={index}>{items}</li>
             )}
           </ul>
-          <button className="h-[50px] w-[200px] md:w-[230px] text-white font-semibold text-[15px] md:text-[17px] bg-[#075197] rounded-md hover:bg-[#200459] duration-300">View All Coursers</button>
+          <button onClick={handleClick} className="h-[50px] w-[200px] md:w-[230px] text-white font-semibold text-[15px] md:text-[17px] bg-[#075197] rounded-md hover:bg-[#200459] duration-300">View All Coursers</button>
         </div>
         <div className="my-auto grid grid-cols-2 gap-0 w-full gap-5 md:w-[75vw] px-5">
           <img
@@ -50,4 +58,4 @@ function Certification() {
   )
 }
 
-export default Certification
+export default About

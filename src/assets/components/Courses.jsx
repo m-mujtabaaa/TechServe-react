@@ -18,28 +18,28 @@ function Courses() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           {/* Course Card */}
-          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-between">
+          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-center">
             <h4 className='text-[#13345B] font-bold leading-5 text-lg md:text-xl lg:text-2xl mb-2'>Software Development</h4>
             <p className='text-gray-800 text-sm md:text-base leading-5'>
               Learn coding, development, and software engineering from the best.
             </p>
           </div>
 
-          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-between">
+          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-center">
             <h4 className='text-[#13345B] font-bold leading-5 text-lg md:text-xl lg:text-2xl mb-2'>Web Designing</h4>
             <p className='text-gray-800 text-sm md:text-base leading-5'>
               Unleash your creativity with our expert-led Graphic Designing course and bring ideas to life!
             </p>
           </div>
 
-          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-between">
+          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-center">
             <h4 className='text-[#13345B] font-bold leading-5 text-lg md:text-xl lg:text-2xl mb-2'>Microsoft</h4>
             <p className='text-gray-800 text-sm md:text-base leading-5'>
               Master in-demand skills with our Microsoft-certified courses and elevate your tech career!
             </p>
           </div>
 
-          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-between">
+          <div className="bg-gray-200 h-auto md:h-[23vh] p-6 rounded-lg shadow-lg hover:shadow-2xl duration-300 text-center flex flex-col justify-center">
             <h4 className='text-[#13345B] font-bold leading-5 text-lg md:text-xl lg:text-2xl mb-2'>Web Design & Development</h4>
             <p className='text-gray-800 text-sm md:text-base leading-5'>
               Build stunning and functional websites with modern tools.

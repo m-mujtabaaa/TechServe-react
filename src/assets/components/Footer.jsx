@@ -78,7 +78,7 @@ export default function SpaceSection() {
             <hr className="h-1 w-20 bg-[#075197] mb-5 mx-auto lg:mx-0" />
             <ul className="text-white font-bold text-[15px] leading-8 list-none md:list-disc px-5 inline-block text-left ">
               <li className="md:text-start text-center"><a href="/" className="hover:text-[#075197] duration-300">Home</a></li>
-              <li className="md:text-start text-center"><a href="#Courses" className="hover:text-[#075197] duration-300">Courses</a></li>
+              <li className="md:text-start text-center"><a href="/courses" className="hover:text-[#075197] duration-300">Courses</a></li>
               <li className="md:text-start text-center"><a href="/privacyPolicy" className="hover:text-[#075197] duration-300">Terms and Conditions</a></li>
             </ul>
           </div>

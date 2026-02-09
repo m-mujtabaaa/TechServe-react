@@ -15,6 +15,7 @@ import { createBrowserRouter, RouterProvider, } from 'react-router-dom'
 import Privacypolicy from './assets/components/Privacypolicy'
 import Contact from './assets/components/Contact'
 import Profile from './assets/components/Profile'
+import Coursespage from './assets/components/Coursespage'
 
 function App() {
   const router = createBrowserRouter([
@@ -60,6 +61,16 @@ function App() {
         <Curser />
         <Navbar />
         <Contact/>
+        <Footer />
+      </>
+    }
+    ,
+    {
+      path: "/courses",
+      element: <>
+        <Curser />
+        <Navbar />
+        <Coursespage/>
         <Footer />
       </>
     }
