@@ -55,3 +55,8 @@ body{
     border-radius: 50%;
 }
 
+@media (pointer: coarse) {
+  .cursor {
+    display: none !important;
+  }
+}

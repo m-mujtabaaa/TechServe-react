@@ -60,7 +60,7 @@ function Profile() {
 
         {/* Sidebar */}
         <aside className={`bg-[#075197] text-white p-6  
-        fixed top-0 left-0 h-full z-50 
+        fixed top-0 left-0 h-full md:h-auto z-50 
         w-64 transform transition-transform duration-300
         ${open ? "translate-x-0" : "-translate-x-full"} 
         md:translate-x-0 md:static md:w-[20%]`}

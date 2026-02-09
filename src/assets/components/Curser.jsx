@@ -31,7 +31,7 @@ const Curser = () => {
     };
   }, []);
 
-  return <div className="cursor hidden md:block" ref={cursorRef}></div>
+  return <div className="cursor" ref={cursorRef}></div>
 ;
 };
 
