@@ -16,7 +16,6 @@ function Coursespage() {
 
     <div className='h-full py-30 w-full bg-white flex flex-col items-center justify-center' id='Courses'>
       
-      {/* Section Header */}
       <h5 className='text-[#075197] font-bold text-sm md:text-base mb-2'>EDUCATION FOR EVERYONE</h5>
       <h3 className='text-[#13345B] font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-4 px-4 md:px-0'>
         Affordable Courses and Learning Opportunities
